@@ -17,6 +17,19 @@
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[DNPlaygroundViewController new]];
     
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont fontWithName:@"American Typewriter-Bold" size:20]}];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor yellowColor], NSFontAttributeName: [UIFont fontWithName:@"ArialRoundedMTBold" size:10]} forState: UIControlStateNormal];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UIToolbar class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor greenColor], NSFontAttributeName: [UIFont fontWithName:@"Baskerville-Bold" size:20]} forState: UIControlStateNormal];
+    [[UIToolbar appearance] setBackgroundColor:[UIColor purpleColor]];
+    [[UISegmentedControl appearance] setTintColor:[UIColor blackColor]];
+    [[UISegmentedControl appearance] setBackgroundColor:[UIColor orangeColor]];
+    
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

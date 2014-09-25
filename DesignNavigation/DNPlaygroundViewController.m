@@ -27,6 +27,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UILabel *titleLabel = [UILabel new];
+    titleLabel.text = @"Designed Label";
+    
+    titleLabel.backgroundColor = [UIColor darkGrayColor];
+    titleLabel.textColor = [UIColor blueColor];
+    titleLabel.frame = CGRectMake(0, 0, 100, 40);
+    
+    self.navigationItem.titleView = titleLabel;
 }
 
 - (void)didReceiveMemoryWarning
